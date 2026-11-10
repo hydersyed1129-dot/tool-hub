@@ -112,7 +112,17 @@ a.tool-card:hover .card-mark, a.tool-card:focus-visible .card-mark { transform: 
 .download-link { display: inline-block; margin-top: 14px; color: var(--green); font-size: 13px; font-weight: 700; text-underline-offset: 3px; }
 .timer-display { display: block; margin: 22px 0 8px; color: var(--green); font-family: "DM Mono", monospace; font-size: clamp(42px, 12vw, 64px); font-weight: 500; text-align: center; font-variant-numeric: tabular-nums; }
 .featured-result { color: var(--green); font-family: "Space Grotesk", sans-serif; font-size: 40px; font-weight: 600; }
-footer { display: flex; justify-content: space-between; gap: 16px; padding: 17px 0 25px; border-top: 1px solid var(--line); color: #78857c; font-family: "DM Mono", monospace; font-size: 10px; text-transform: uppercase; }
+footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 20px; padding: 17px 0 25px; border-top: 1px solid var(--line); color: #78857c; font-family: "DM Mono", monospace; font-size: 10px; text-transform: uppercase; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.footer-links a { color: var(--green); text-decoration: none; transition: color 150ms ease; }
+.footer-links a:hover, .footer-links a[aria-current="page"] { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.info-main { width: min(760px, 100%); }
+.info-content { line-height: 1.75; }
+.info-content h2 { margin: 25px 0 8px; font-family: "Space Grotesk", sans-serif; font-size: 19px; }
+.info-content h2:first-child { margin-top: 0; }
+.info-content p { margin: 0 0 16px; color: #526258; font-size: 14px; }
+.info-content a:not(.tool-button) { color: var(--green); font-weight: 600; text-underline-offset: 3px; }
+.info-content .info-link-button { display: inline-flex; align-items: center; margin: 0; text-decoration: none; }
 @keyframes arrive { from { opacity: 0; transform: translateY(9px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes field-arrive { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes count-update { 50% { color: var(--green); transform: translateY(-2px); } }
